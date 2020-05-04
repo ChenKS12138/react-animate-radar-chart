@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: teal;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button.btn {
+  color: black;
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: black 2px 2px 8px;
+  outline: none;
+  margin: 0 5px;
+}
+button.btn:active {
+  box-shadow: black 2px 2px 0px;
+}

@@ -1,0 +1,8 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "plugins": ["react", "react-hooks"],
+  "parser": "babel-eslint"
+}
