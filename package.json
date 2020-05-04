@@ -1,9 +1,15 @@
 {
-  "name": "react-radar-chart",
-  "version": "1.0.0",
+  "name": "react-animate-radar-chart",
+  "version": "1.0.2",
   "main": "lib/RadarChart.js",
   "author": "ChenKS12138 <749923710@qq.com>",
   "license": "MIT",
+  "keywords": [
+    "radart-chart",
+    "animate",
+    "react"
+  ],
+  "description": "react animate radar chart",
   "scripts": {
     "build": "webpack --mode production --config ./config/webpack.js",
     "start": "webpack-dev-server --mode development --config ./config/webpack.js",

@@ -3,3 +3,7 @@ node_modules
 src
 config
 .babelrc
+.github
+.eslintrc
+.eslintignore
+.gitignore
