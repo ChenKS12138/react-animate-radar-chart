@@ -1,7 +1,7 @@
 {
   "name": "react-animate-radar-chart",
-  "version": "1.0.2",
-  "main": "lib/RadarChart.js",
+  "version": "1.1.0",
+  "main": "lib/RadarChartCompiled.js",
   "author": "ChenKS12138 <749923710@qq.com>",
   "license": "MIT",
   "keywords": [
@@ -11,9 +11,11 @@
   ],
   "description": "react animate radar chart",
   "scripts": {
+    "build:lib": "babel ./lib/RadarChart.js --out-file ./lib/RadarChartCompiled.js",
     "build": "webpack --mode production --config ./config/webpack.js",
     "start": "webpack-dev-server --mode development --config ./config/webpack.js",
-    "lint": "eslint --ext .js,.jsx ./src/ ./lib"
+    "lint": "eslint --ext .js,.jsx ./src/ ./lib",
+    "publish": "npm run build:lib && npm publish"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
@@ -27,7 +29,9 @@
     }
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "babel-eslint": "^10.1.0",
